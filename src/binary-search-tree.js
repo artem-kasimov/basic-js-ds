@@ -54,13 +54,13 @@ class BinarySearchTree {
         if (currentNode.left === data) {
           return true
         } else {
-          currentNode.left = currentNode
+          currentNode = currentNode.left
         }
       } else if (currentNode.data > data) {
         if (currentNode.right === data) {
           return true
         } else {
-          currentNode.right = currentNode
+          currentNode = currentNode.right
         }
       } else {
         return true
