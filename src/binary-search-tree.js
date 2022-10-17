@@ -50,13 +50,13 @@ class BinarySearchTree {
     let currentNode = this._root
 
     while (currentNode) {
-      if (currentNode.data < data) {
+      if (currentNode.data > data) {
         if (currentNode.left === data) {
           return true
         } else {
           currentNode = currentNode.left
         }
-      } else if (currentNode.data > data) {
+      } else if (currentNode.data < data) {
         if (currentNode.right === data) {
           return true
         } else {
